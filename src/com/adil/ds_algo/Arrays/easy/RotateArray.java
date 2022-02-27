@@ -6,8 +6,12 @@ public class RotateArray {
 
     public static void main(String ar[]) {
         int arr[] = {3, 5, 6, 7};
+        int k = 2;
+        int n = arr.length;
 
         reverse(arr,0,arr.length-1);
+        reverse(arr, 0, k-1);
+        reverse(arr, k, n-1);
         printArray(arr);
     }
 
