@@ -14,7 +14,8 @@ import java.util.*;
 public class TwoSum {
 
     /**
-     * O(nlogn) solution
+     * TC -> O(nlogn) solution
+     * SC -> O(n)
      */
 
     class Pair {
@@ -30,16 +31,24 @@ public class TwoSum {
 
     public int[] twoSum(int[] nums, int target) {
         int n = nums.length;
+        /**
+         * created array of custom objects
+         */
         Pair[] pairArr = new Pair[n];
+
         for(int i=0; i<n; i++)
             pairArr[i] = new Pair(i, nums[i]);
 
+        /**
+         * Sorting my custom array using comparator
+         */
         Arrays.sort(pairArr, new Comparator<Pair>() {
             @Override public int compare(Pair p1, Pair p2)
             {
                 return p1.value - p2.value;
             }
         });
+
         int start = 0;
         int end = nums.length-1;
         int[] ans = new int[2];
@@ -58,21 +67,24 @@ public class TwoSum {
         return ans;
     }
 
-    /**
-     * *****************************************************************************************************
-     */
+/**
+ ******************************************************************************************************
+ *******************************************************************************************************
+ */
 
 
     /**
-     * O(n) solution using hashmap
+     * TC -> O(n) solution using hashmap
+     * SC -> O(n)
      */
     public int[] twoSumOptimised(int[] numbers, int target) {
         int[] result = new int[2];
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < numbers.length; i++) {
-            if (map.containsKey(target - numbers[i])) {
+            int reqNo = target - numbers[i];
+            if (map.containsKey(reqNo)) {
                 result[1] = i;
-                result[0] = map.get(target - numbers[i]);
+                result[0] = map.get(reqNo);
                 return result;
             }
             map.put(numbers[i], i);
