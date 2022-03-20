@@ -1,6 +1,6 @@
-package com.adil.ds_algo.Arrays.easy;
+package com.adil.ds_algo.arrays.easy;
 
-import static com.adil.ds_algo.Arrays.easy.ShiftArray.printArray;
+import static com.adil.ds_algo.arrays.easy.ShiftArray.printArray;
 
 public class RotateArray {
 

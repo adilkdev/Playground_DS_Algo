@@ -1,4 +1,4 @@
-package com.adil.ds_algo.Arrays.easy;
+package com.adil.ds_algo.arrays.easy;
 
 /**
  * You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n,

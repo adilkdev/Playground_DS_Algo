@@ -1,4 +1,4 @@
-package com.adil.ds_algo.Arrays.easy;
+package com.adil.ds_algo.arrays.easy;
 
 public class ShiftArray {
 

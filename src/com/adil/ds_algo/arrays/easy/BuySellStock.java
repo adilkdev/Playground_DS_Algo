@@ -1,4 +1,4 @@
-package com.adil.ds_algo.Arrays.easy;
+package com.adil.ds_algo.arrays.easy;
 
 /**
  * Input: prices = [7,1,5,3,6,4]
