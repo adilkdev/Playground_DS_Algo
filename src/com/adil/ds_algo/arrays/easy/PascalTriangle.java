@@ -27,7 +27,7 @@ class PascalTriangle {
     public List<List<Integer>> generate(int numRows) {
 
         List<List<Integer>> triangle = new ArrayList();
-        List<Integer> row = null, prev = null;
+        List<Integer> row, prev = null;
 
         for(int i=0; i<numRows; i++) {
             row = new ArrayList();
