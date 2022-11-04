@@ -18,7 +18,7 @@ import java.util.List;
  */
 
 /**
- *  At every row first and last elements always remains 1, so no need to compute it.
+ *  At every row, first and last elements always remains 1, so no need to compute it.
  *  Elements change as go to triangle[row-1][col-1] + triangle[row-1][col]
  */
 
