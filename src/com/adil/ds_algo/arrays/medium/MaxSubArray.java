@@ -14,11 +14,13 @@ package com.adil.ds_algo.arrays.medium;
 public class MaxSubArray {
 
     public int maxSubArray(int[] nums) {
-        int curSum = nums[0];
-        int maxSum = curSum;
+        int curSum = 0;
+        int maxSum = 0;
 
         for(int i=1; i<nums.length; i++) {
-            curSum = Math.max(curSum + nums[i], nums[i]);
+            curSum = curSum + nums[i];
+            if (curSum < 0)
+                curSum = 0;
             maxSum = Math.max(curSum, maxSum);
         }
         return maxSum;
