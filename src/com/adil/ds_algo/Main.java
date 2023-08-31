@@ -1,7 +1,7 @@
 package com.adil.ds_algo;
 
 import com.adil.ds_algo.arrays.easy.MoveAllZerosToEnd;
-import com.adil.ds_algo.arrays.medium.MaxSubArray;
+import com.adil.ds_algo.arrays.easy.Sort01;
 
 import java.util.Arrays;
 
