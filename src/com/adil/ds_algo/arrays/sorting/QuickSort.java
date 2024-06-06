@@ -1,4 +1,4 @@
-package com.adil.ds_algo.arrays.easy.sorting;
+package com.adil.ds_algo.arrays.sorting;
 
 /**
  * input : {1, 10, 7, 4, 9, 0 , 9, 9};
