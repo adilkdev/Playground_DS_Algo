@@ -2,6 +2,10 @@ package com.adil.ds_algo.recursion;
 
 public class RecursionGeneral {
 
+    public static void main(String[] args) {
+        System.out.println();
+    }
+
     private static void print(int n) {
         System.out.println(n + "");
         if(n > 1) print(n-1);
