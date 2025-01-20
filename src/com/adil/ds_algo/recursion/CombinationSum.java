@@ -8,6 +8,9 @@ import java.util.List;
  * 2 ^ target because we are selecting every index any number of times, if we were to select only once,
  * then it would be 2 ^ n, where n is the size of array.
  * k = time taken to add List<Integer> to List<List<Integer>>
+ *
+ *     <a href="https://leetcode.com/problems/combination-sum/"></a>
+ *     <a href="https://leetcode.com/problems/combination-sum-ii/">2nd variant</a>
  */
 
 public class CombinationSum {
